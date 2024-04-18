@@ -70,6 +70,7 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
+		<audio id="background-music" src="assets/music-background.mp3" preload="auto" autoplay loop></audio>
 	<!-- <nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
@@ -478,7 +479,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-services" class="fh5co-section-gray">
+<!-- 	<div id="fh5co-services" class="fh5co-section-gray">
 		<div class="container">
 			
 			<div class="row animate-box">
@@ -532,7 +533,7 @@
 
 			
 		</div>
-	</div>
+	</div> -->
 
 
 	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
@@ -568,7 +569,7 @@
 		</div>
 	</div>
 
-	<footer id="fh5co-footer" role="contentinfo">
+<!-- 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 
 			<div class="row copyright">
@@ -589,13 +590,22 @@
 			</div>
 
 		</div>
-	</footer>
+	</footer> -->
 	</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		  var audio = document.getElementById('background-music');
+		  audio.play().catch(function() {
+			// Autoplay was prevented by the browser.
+			// You might want to provide a user interface element to allow manual playback.
+		  });
+		});
+	</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
