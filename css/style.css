@@ -967,8 +967,8 @@ form label {
   /* countdown block inner div */
   display: table-cell;
   vertical-align: middle;
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
 }
 
 .simply-countdown > .simply-section .simply-amount,
