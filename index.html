@@ -5,27 +5,27 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 		<style>
-		        #audio-controls {
-		            position: fixed;
-		            top: 20px; /* Adjust top positioning as needed */
-		            left: 20px; /* Position in the upper left corner */
-		            background-color: rgba(255, 255, 255, 0.8);
-		            border-radius: 50%; /* Make it round */
-		            padding: 10px;
-		            cursor: pointer;
-		            z-index: 1000;
-		            width: 40px; /* Set a fixed width */
-		            height: 40px; /* Set a fixed height */
-		            display: flex; /* Center the button */
-		            justify-content: center; /* Center horizontally */
-		            align-items: center; /* Center vertically */
-		        }
-		
-		        #audio-controls i {
-		            font-size: 20px; /* Adjust the icon size */
-		            color: #000; /* Set the icon color */
-		        }
-		    </style>
+			#audio-controls {
+				position: fixed;
+				top: 20px;
+				right: 20px;
+				background-color: rgba(255, 255, 255, 0.8);
+				border-radius: 50%; /* Make it round */
+				padding: 10px;
+				cursor: pointer;
+				z-index: 1000;
+				width: 40px; /* Set a fixed width */
+				height: 40px; /* Set a fixed height */
+				display: flex; /* Center the button */
+				justify-content: center; /* Center horizontally */
+				align-items: center; /* Center vertically */
+			}
+	
+			#audio-controls img {
+				width: 20px;
+				height: 20px;
+			}
+		</style>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Wedding Celebration &mdash; Wawan dan Inung</title>
@@ -122,11 +122,9 @@
 				});
 			});
 		</script>
-		
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-		<audio id="background-music" src="assets/music-background.mp3" preload="auto" autoplay loop></audio>
 	<!-- <nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
@@ -329,6 +327,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>Our Memories</span>
 					<h2>Wedding Gallery</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
@@ -643,4 +642,3 @@
 
 	</body>
 </html>
-
