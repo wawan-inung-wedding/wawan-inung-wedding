@@ -4,6 +4,28 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
+		<style>
+		        #audio-controls {
+		            position: fixed;
+		            top: 20px; /* Adjust top positioning as needed */
+		            left: 20px; /* Position in the upper left corner */
+		            background-color: rgba(255, 255, 255, 0.8);
+		            border-radius: 50%; /* Make it round */
+		            padding: 10px;
+		            cursor: pointer;
+		            z-index: 1000;
+		            width: 40px; /* Set a fixed width */
+		            height: 40px; /* Set a fixed height */
+		            display: flex; /* Center the button */
+		            justify-content: center; /* Center horizontally */
+		            align-items: center; /* Center vertically */
+		        }
+		
+		        #audio-controls i {
+		            font-size: 20px; /* Adjust the icon size */
+		            color: #000; /* Set the icon color */
+		        }
+		    </style>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Wedding Celebration &mdash; Wawan dan Inung</title>
@@ -66,6 +88,40 @@
 
 	</head>
 	<body>
+		<audio id="background-music" src="assets/music-background.mp3" preload="auto" autoplay loop></audio>
+		<div id="audio-controls">
+			<i id="play-pause-button" class="icon-pause"></i>
+			<!-- <img id="play-pause-button" src="icon-calendar"> -->
+		</div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var audio = document.getElementById('background-music');
+				var playPauseButton = document.getElementById('play-pause-button');
+	
+				playPauseButton.addEventListener('click', function() {
+					if (audio.paused) {
+						audio.play();
+						playPauseButton.classList.remove('icon-play');
+						playPauseButton.classList.add('icon-pause');
+					} else {
+						audio.pause();
+						playPauseButton.classList.remove('icon-pause');
+						playPauseButton.classList.add('icon-play');
+					}
+				});
+	
+				audio.addEventListener('pause', function() {
+					playPauseButton.classList.remove('icon-pause');
+					playPauseButton.classList.add('icon-play');
+				});
+	
+				audio.addEventListener('play', function() {
+					playPauseButton.classList.remove('icon-play');
+					playPauseButton.classList.add('icon-pause');
+				});
+			});
+		</script>
 		
 	<div class="fh5co-loader"></div>
 	
