@@ -28,7 +28,7 @@
 		</style>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Wedding Celebration &mdash; Wawan dan Inung</title>
+	<title>Wedding Celebration &mdash; Wawan dan zahro</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -169,10 +169,12 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<p></br></br></p>
-							<h1>Wawan &amp; Inung</h1>
+							<h1>Wawan &amp; Zahro</h1>
 							<h2>Our Wedding Celebration</h2>
+							<h1 id = "displayValue"></h1>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+							<h2>You are invited</h2>
+<!-- 							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p> -->
 						</div>
 					</div>
 				</div>
@@ -245,7 +247,7 @@
 								<div class="event-wrap animate-box">
 									<h3>Google Maps</h3>
 									<div class="google-map">
-										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5244.332571802206!2d107.29305487798146!3d-6.356676756436584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69773dbb852bb1%3A0x3506b535530f93be!2sTMMIN%20Main%20Office%20Karawang%20Plant%201!5e0!3m2!1sid!2sid!4v1713536979985!5m2!1sid!2sid " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d709.5361825184239!2d109.52840317541846!3d-7.443276266252652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655373a09df59b%3A0x1e0bbcdf2655e582!2sMandireja%20Wetan%202%2C%20Mandiraja%20Wetan%2C%20Kec.%20Mandiraja%2C%20Kab.%20Banjarnegara%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1713789740082!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 									</div>
 								</div>
 							</div>
@@ -402,7 +404,7 @@
 		</div>
 	</div> -->
 
-	<div id="fh5co-testimonial">
+<!-- 	<div id="fh5co-testimonial">
 		<div class="container">
 			<div class="row">
 				<div class="row animate-box">
@@ -454,7 +456,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 <!-- 	<div id="fh5co-services" class="fh5co-section-gray">
 		<div class="container">
@@ -513,7 +515,7 @@
 	</div> -->
 
 
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+<!-- 	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
@@ -544,7 +546,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 <!-- 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -596,6 +598,18 @@
 		  });
 		});
 	</script>
+	<script>
+	        function getUrlParameter(name) {
+	            name = name.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
+	            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+	            var results = regex.exec(location.search);
+	            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+	        }
+	        document.addEventListener('DOMContentLoaded', function() {
+	            var value = getUrlParameter('to');
+	            document.getElementById('displayValue').innerText = "Dear: " + value;
+	        });
+	    </script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
